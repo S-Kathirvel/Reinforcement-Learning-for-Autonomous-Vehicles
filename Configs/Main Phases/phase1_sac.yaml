@@ -1,0 +1,25 @@
+behaviors:
+  CarBehavior:
+    trainer_type: sac
+    hyperparameters:
+      buffer_init_steps: 10000  # Initial random exploration before learning
+      batch_size: 1024          # Lower batch for online updates
+      buffer_size: 100000       # Large replay buffer for experience reuse
+      learning_rate: 3.0e-4      # Matches PPO for comparison
+      learning_rate_schedule: constant
+      tau: 0.005                # Controls how fast the target network updates
+      steps_per_update: 1       # SAC updates every step (continuous learning)
+      save_replay_buffer: true  # Allows resuming training later
+      init_entcoef: 0.5         # Initial entropy coefficient (for exploration)
+    network_settings:
+      normalize: true
+      hidden_units: 256
+      num_layers: 3
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+    keep_checkpoints: 5
+    max_steps: 2500000         # SAC needs fewer steps than PPO
+    summary_freq: 10000
+    threaded: true

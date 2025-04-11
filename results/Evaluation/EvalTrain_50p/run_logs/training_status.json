@@ -1,0 +1,56 @@
+{
+    "CarBehavior": {
+        "checkpoints": [
+            {
+                "steps": 499973,
+                "file_path": "results\\EvalTrain_50p\\CarBehavior\\CarBehavior-499973.onnx",
+                "reward": 447.80600955486295,
+                "creation_time": 1744280977.7047732,
+                "auxillary_file_paths": [
+                    "results\\EvalTrain_50p\\CarBehavior\\CarBehavior-499973.pt"
+                ]
+            },
+            {
+                "steps": 999990,
+                "file_path": "results\\EvalTrain_50p\\CarBehavior\\CarBehavior-999990.onnx",
+                "reward": 1066.6184839062068,
+                "creation_time": 1744283099.1545014,
+                "auxillary_file_paths": [
+                    "results\\EvalTrain_50p\\CarBehavior\\CarBehavior-999990.pt"
+                ]
+            },
+            {
+                "steps": 1499946,
+                "file_path": "results\\EvalTrain_50p\\CarBehavior\\CarBehavior-1499946.onnx",
+                "reward": 1200.4503733317058,
+                "creation_time": 1744285355.5577123,
+                "auxillary_file_paths": [
+                    "results\\EvalTrain_50p\\CarBehavior\\CarBehavior-1499946.pt"
+                ]
+            },
+            {
+                "steps": 1735305,
+                "file_path": "results\\EvalTrain_50p\\CarBehavior\\CarBehavior-1735305.onnx",
+                "reward": 1274.0029145020706,
+                "creation_time": 1744286049.24772,
+                "auxillary_file_paths": [
+                    "results\\EvalTrain_50p\\CarBehavior\\CarBehavior-1735305.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1735305,
+            "file_path": "results\\EvalTrain_50p\\CarBehavior.onnx",
+            "reward": 1274.0029145020706,
+            "creation_time": 1744286049.24772,
+            "auxillary_file_paths": [
+                "results\\EvalTrain_50p\\CarBehavior\\CarBehavior-1735305.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cu124"
+    }
+}

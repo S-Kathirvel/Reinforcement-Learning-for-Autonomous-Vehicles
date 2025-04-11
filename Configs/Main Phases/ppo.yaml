@@ -1,0 +1,28 @@
+torch_settings:
+  device: cuda:0
+
+behaviors:
+  CarBehavior:
+    trainer_type: ppo 
+    hyperparameters: 
+      batch_size: 2048 
+      buffer_size: 20480
+      learning_rate: 3.0e-4
+      learning_rate_schedule: linear
+      beta: 7.0e-3
+      epsilon: 0.25
+      lambd: 0.95
+      num_epoch: 5
+    network_settings:
+      num_layers: 4
+      hidden_units: 512 
+      normalize: true
+    reward_signals:
+      extrinsic:
+        gamma: 0.999
+        strength: 0.8
+    keep_checkpoints: 3
+    max_steps: 2000000
+    time_horizon: 64
+    summary_freq: 10000
+    checkpoint_interval: 500000

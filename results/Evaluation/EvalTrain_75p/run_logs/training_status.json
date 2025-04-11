@@ -1,0 +1,47 @@
+{
+    "CarBehavior": {
+        "checkpoints": [
+            {
+                "steps": 1499939,
+                "file_path": "results\\EvalTrain_75p\\CarBehavior\\CarBehavior-1499939.onnx",
+                "reward": 1235.6015397003719,
+                "creation_time": 1744359426.475713,
+                "auxillary_file_paths": [
+                    "results\\EvalTrain_75p\\CarBehavior\\CarBehavior-1499939.pt"
+                ]
+            },
+            {
+                "steps": 1999958,
+                "file_path": "results\\EvalTrain_75p\\CarBehavior\\CarBehavior-1999958.onnx",
+                "reward": 1305.511196708679,
+                "creation_time": 1744367984.0567138,
+                "auxillary_file_paths": [
+                    "results\\EvalTrain_75p\\CarBehavior\\CarBehavior-1999958.pt"
+                ]
+            },
+            {
+                "steps": 2000022,
+                "file_path": "results\\EvalTrain_75p\\CarBehavior\\CarBehavior-2000022.onnx",
+                "reward": 1305.511196708679,
+                "creation_time": 1744367984.2224085,
+                "auxillary_file_paths": [
+                    "results\\EvalTrain_75p\\CarBehavior\\CarBehavior-2000022.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2000022,
+            "file_path": "results\\EvalTrain_75p\\CarBehavior.onnx",
+            "reward": 1305.511196708679,
+            "creation_time": 1744367984.2224085,
+            "auxillary_file_paths": [
+                "results\\EvalTrain_75p\\CarBehavior\\CarBehavior-2000022.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cu124"
+    }
+}
